@@ -1,11 +1,9 @@
 ---
-layout: page  # <--- 关键！改成 page，你的文字才会显示出来
-title: Home   # 页面标题
-# 这一行是隐藏页面大标题的配置（Chirpy特性），这样看起来更像个人主页
-hide_title: true 
+layout: page
+title: Hello 👋  # 直接把这里改成 Hello，这样页面标题就是 Hello
+# hide_title: true # Chirpy 默认不支持这个属性，建议直接用 title 控制
+permalink: /
 ---
-
-# Hello 👋
 
 Welcome to my homepage! I am **Xinzhu Li (李心竹)**.
 
@@ -27,4 +25,9 @@ I am currently a Master student at **Your University**, focusing on **Computer V
 ---
 
 ## **Recent Updates**
----
+
+{% for post in site.posts limit:5 %}
+* [{{ post.title }}]({{ post.url }}) - *{{ post.date | date: "%Y-%m-%d" }}*
+{% endfor %}
+
+[View all posts](/archives/)
