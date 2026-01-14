@@ -192,9 +192,9 @@ defaults:
       layout: page
       permalink: /:title/
   - scope:
-    path: assets/js/dist
-  values:
-    swcache: true
+      path: assets/js/dist
+    values:
+      swcache: true
 
 sass:
   style: compressed
