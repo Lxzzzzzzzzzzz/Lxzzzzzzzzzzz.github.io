@@ -1,7 +1,7 @@
 ---
 title: "Attention is All you Need"
 description: Google 2017 NIPS | 从代码的角度详细解读Transformer
-date: 2024-02-05
+date: 2026-01-15
 categories: [Gait Recognition]
 
 pin: false
