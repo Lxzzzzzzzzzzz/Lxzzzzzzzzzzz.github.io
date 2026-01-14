@@ -6,7 +6,7 @@ theme: jekyll-theme-chirpy
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
-lang: en
+lang: zh-CN
 
 # Change to your timezone › https://zones.arilyn.cc
 timezone:
@@ -16,7 +16,7 @@ timezone:
 
 title: Li Xinzhu # the main title
 
-tagline: AI Researcher | Gait Recognition & Large Models # it will display as the subtitle
+tagline: Welcome to my homepage 👋 # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -26,7 +26,7 @@ description: >- # used by seo meta and the atom feed
 url: "https://Lxzzzzzzzzzzz.github.io"
 
 github:
-  username: github_username # change to your GitHub username
+  username: Lxzzzzzzzzzzz # change to your GitHub username
 
 twitter:
   username: twitter_username # change to your Twitter username
@@ -34,11 +34,11 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: Xinzhu Li
+  email: lixzh86@mail2.sysu.edu.cn # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
+    # - https://twitter.com/username # change to your Twitter homepage
     - https://github.com/username # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
@@ -70,8 +70,6 @@ analytics:
     domain: # fill in your Matomo domain
   cloudflare:
     id: # fill in your Cloudflare Web Analytics token
-  fathom:
-    id: # fill in your Fathom Site ID
 
 # Page views settings
 pageviews:
@@ -147,7 +145,8 @@ pwa:
     deny_paths:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
-paginate: 10
+paginate: 6
+paginate_path: "/blogs/:num/"
 
 # The base URL of your site
 baseurl: ""
@@ -177,7 +176,7 @@ defaults:
       type: posts
     values:
       layout: post
-      comments: true # Enable comments in posts.
+      comments: false # Enable comments in posts.
       toc: true # Display TOC column in posts.
       # DO NOT modify the following parameter unless you are confident enough
       # to update the code of all other post links in this project.
@@ -192,13 +191,16 @@ defaults:
     values:
       layout: page
       permalink: /:title/
+  - scope:
+    path: assets/js/dist
+  values:
+    swcache: true
 
 sass:
   style: compressed
 
 compress_html:
   clippings: all
-  comments: all
   endings: all
   profile: false
   blanklines: false
@@ -212,7 +214,6 @@ exclude:
   - tools
   - README.md
   - LICENSE
-  - purgecss.js
   - "*.config.js"
   - "package*.json"
 
@@ -224,5 +225,3 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
-
-    
